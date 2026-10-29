@@ -99,7 +99,7 @@
       <h2 id="titre-verifier">Livrez-vous chez moi ?</h2>
       <form class="formulaire" action="#" method="get">
         <div class="champ">
-          <label for="cp">Code postal</label>
+          <label for="code-postal">Code postal</label>
           <input id="code-postal" name="cp" type="text" inputmode="numeric"
                  pattern="[0-9]{5}" maxlength="5" autocomplete="postal-code" required>
         </div>
@@ -112,10 +112,51 @@
     </section>
   </main>
 
+  <!-- Section FAQ : mêmes classes que les autres sections, liée à son titre pour les lecteurs d'écran -->
+  <section class="conteneur section faq" aria-labelledby="faq-titre">
+    <h2 id="faq-titre">Foire aux questions</h2>
+
+    <!-- Une question = un bloc <details> : déroulant natif, utilisable au clavier -->
+    <details>
+      <summary>Dans quelles communes livrez-vous ?</summary>
+      <p>Nous livrons à Tours, Joué-lès-Tours, Saint-Cyr-sur-Loire et Saint-Pierre-des-Corps, ainsi que dans les autres communes situées à moins de 25 km.</p>
+    </details>
+
+    <details>
+      <summary>Jusqu'à quelle heure puis-je commander pour une livraison le jour même ?</summary>
+      <p>Commandez avant 14 h : à Tours et dans les communes de la zone 2, votre bouquet arrive le jour même. Pour la zone 3, la livraison a lieu le lendemain.</p>
+    </details>
+
+    <details>
+      <summary>Combien coûte la livraison ?</summary>
+      <p>Le tarif dépend de la zone : 6,90 € en zone 1, 9,90 € en zone 2 et 14,90 € en zone 3. La livraison est offerte dès 60 € d'achat en zone 1.</p>
+    </details>
+
+    <details>
+      <summary>Que se passe-t-il si je suis absent ?</summary>
+      <p>Nous livrons en main propre. En cas d'absence, nous vous appelons pour convenir de la suite.</p>
+    </details>
+
+    <details>
+      <summary>Comment saurai-je que mon bouquet est livré ?</summary>
+      <p>Un SMS confirme la livraison et indique l'heure de remise du bouquet.</p>
+    </details>
+
+    <details>
+      <summary>Puis-je commander un bouquet sur mesure ?</summary>
+      <p>Oui, par téléphone : nous composons un bouquet selon vos envies, avec des fleurs de saison.</p>
+    </details>
+
+    <details>
+      <summary>Quels sont les horaires de la boutique ?</summary>
+      <p>La boutique est ouverte du mardi au samedi, de 9 h à 19 h. Nos coordonnées figurent en bas de page.</p>
+    </details>
+  </section>
+
   <footer class="pied">
     <div class="conteneur">
       <address>
-        <em>Fleurs Roussel</em>, <em>12 rue Colbert, 37000 Tours ·
+        <em>Fleurs Roussel</em>, <p>12 rue Colbert, 37000 Tours ·</p>
         <a href="tel:+33261910000">02 61 91 00 00</a>
       </address>
       <p>Boutique ouverte du mardi au samedi, de <time datetime="09:00">9 h</time> à <time datetime="19:00">19 h</time>.</p>
